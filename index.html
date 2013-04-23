@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+  <title>A pronunciation from google</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+  <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+  <!--[if IE]>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection" />
+  <![endif]-->
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+  <script type="text/javascript">
+   function play_voice() {
+    var query = "http://translate.google.com/translate_tts?tl=en&q=" + document.getElementById("text").value;
+    var voice = new Audio(query);
+    voice.play();
+   }
+  </script>
+</head>
+
+<body>
+  <div class="container showgrid">
+    <h1>A pronunciation from google</h1>
+    <textarea id="text"></textarea>
+    <button onclick="play_voice()">play</button>
+</div> <!-- end .container -->
+
+</body>
+</html>
+
